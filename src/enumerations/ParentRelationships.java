@@ -1,0 +1,6 @@
+package enumerations;
+
+public enum ParentRelationships {
+    SON ,GRAND_SON, DAUGHTER, GRAND_DAUGHTER, FATHER, STEP_FATHER,MOTHER, STEP_MOTHER, GRAND_FATHER, GRAND_MOTHER, SISTER,
+    BROTHER, WIFE;
+}
