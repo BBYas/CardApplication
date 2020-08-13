@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="2000.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ClientController">
+   <children>
+      <ScrollPane hbarPolicy="ALWAYS" layoutX="200.0" layoutY="193.0" prefHeight="2000.0" prefWidth="1100.0" vbarPolicy="ALWAYS" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <content>
+            <AnchorPane prefHeight="2000.0" prefWidth="1100.0">
+               <children>
+                  <Label layoutX="367.0" layoutY="17.0" prefHeight="34.0" prefWidth="273.0" text="Pre-Paid Card Application" underline="true">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="821.0" layoutY="34.0" prefHeight="21.0" prefWidth="22.0" text="ID:" />
+                  <JFXTextField layoutX="856.0" layoutY="19.0" prefHeight="31.0" prefWidth="161.0" />
+                  <Label layoutX="68.0" layoutY="74.0" prefHeight="21.0" prefWidth="44.0" text="Date:" />
+                  <JFXDatePicker layoutX="122.0" layoutY="69.0" />
+                  <Label layoutX="352.0" layoutY="84.0" prefHeight="21.0" prefWidth="72.0" text="Bank Iden:" />
+                  <JFXTextField layoutX="431.0" layoutY="69.0" />
+                  <Label layoutX="684.0" layoutY="84.0" prefHeight="21.0" prefWidth="95.0" text="Branch Iden:" />
+                  <JFXTextField layoutX="786.0" layoutY="69.0" prefHeight="31.0" prefWidth="232.0" />
+                  <Label layoutX="323.0" layoutY="127.0" prefHeight="21.0" prefWidth="108.0" text="Customer Type:" />
+                  <CheckBox layoutX="458.0" layoutY="127.0" mnemonicParsing="false" text="O" />
+                  <CheckBox layoutX="520.0" layoutY="127.0" mnemonicParsing="false" text="N" />
+                  <Label layoutX="14.0" layoutY="127.0" prefHeight="21.0" prefWidth="108.0" text="Customer ID:" />
+                  <JFXTextField layoutX="122.0" layoutY="112.0" />
+                  <Label layoutX="649.0" layoutY="127.0" prefHeight="21.0" prefWidth="116.0" text="Parent Customer:" />
+                  <JFXTextField layoutX="786.0" layoutY="112.0" prefHeight="31.0" prefWidth="234.0" />
+                  <Label layoutX="596.0" layoutY="175.0" prefHeight="21.0" prefWidth="176.0" text="Customer Parent Relation:" />
+                  <JFXComboBox layoutX="784.0" layoutY="160.0" prefHeight="31.0" prefWidth="237.0" />
+                  <Label layoutX="33.0" layoutY="175.0" prefHeight="21.0" prefWidth="71.0" text="Promoter:" />
+                  <JFXTextField layoutX="122.0" layoutY="160.0" />
+                  <Label layoutX="347.0" layoutY="175.0" prefHeight="21.0" prefWidth="82.0" text="Nationality:" />
+                  <JFXTextField layoutX="434.0" layoutY="160.0" prefHeight="31.0" prefWidth="139.0" />
+                  <Label layoutX="684.0" layoutY="225.0" prefHeight="21.0" prefWidth="93.0" text="Middle name:" />
+                  <JFXTextField layoutX="786.0" layoutY="210.0" prefHeight="31.0" prefWidth="239.0" />
+                  <Label layoutX="349.0" layoutY="225.0" prefHeight="21.0" prefWidth="78.0" text="First Name:" />
+                  <JFXTextField layoutX="436.0" layoutY="210.0" prefHeight="31.0" prefWidth="140.0" />
+                  <Label layoutX="68.0" layoutY="231.0" prefHeight="21.0" prefWidth="34.0" text="Title:" />
+                  <JFXComboBox layoutX="122.0" layoutY="220.0" prefHeight="31.0" prefWidth="173.0" />
+                  <Label layoutX="29.0" layoutY="281.0" prefHeight="21.0" prefWidth="73.0" text="Last name:" />
+                  <JFXTextField layoutX="116.0" layoutY="268.0" prefHeight="31.0" prefWidth="181.0" />
+                  <Label layoutX="681.0" layoutY="281.0" prefHeight="21.0" prefWidth="100.0" text="Birth Location:" />
+                  <JFXTextField layoutX="786.0" layoutY="266.0" prefHeight="31.0" prefWidth="239.0" />
+                  <Label layoutX="352.0" layoutY="281.0" prefHeight="21.0" prefWidth="73.0" text="Birth Date:" />
+                  <JFXDatePicker layoutX="435.0" layoutY="266.0" prefHeight="31.0" prefWidth="162.0" />
+                  <Label layoutY="339.0" prefHeight="21.0" prefWidth="101.0" text="First Iden Type:" />
+                  <JFXComboBox layoutX="120.0" layoutY="323.0" prefHeight="31.0" prefWidth="177.0" />
+                  <JFXComboBox layoutX="120.0" layoutY="377.0" prefHeight="31.0" prefWidth="179.0" />
+                  <Label layoutY="393.0" prefHeight="21.0" prefWidth="101.0" text="Sec. Iden Type:" />
+                  <Label layoutX="355.0" layoutY="339.0" prefHeight="21.0" prefWidth="68.0" text="First Iden:" />
+                  <JFXTextField layoutX="432.0" layoutY="321.0" prefHeight="31.0" prefWidth="151.0" />
+                  <Label layoutX="357.0" layoutY="393.0" prefHeight="21.0" prefWidth="65.0" text="Sec. Iden:" />
+                  <JFXTextField layoutX="432.0" layoutY="375.0" prefHeight="31.0" prefWidth="155.0" />
+                  <Label layoutX="682.0" layoutY="342.0" prefHeight="21.0" prefWidth="98.0" text="Marital Status:" />
+                  <JFXComboBox layoutX="788.0" layoutY="321.0" prefHeight="31.0" prefWidth="237.0" />
+                  <Label layoutX="724.0" layoutY="396.0" prefHeight="21.0" prefWidth="56.0" text="Gender:" />
+                  <CheckBox layoutX="812.0" layoutY="393.0" mnemonicParsing="false" text="M" />
+                  <CheckBox layoutX="882.0" layoutY="393.0" mnemonicParsing="false" text="F" />
+                  <JFXTextField layoutX="116.0" layoutY="427.0" prefHeight="31.0" prefWidth="181.0" />
+                  <Label layoutX="7.0" layoutY="442.0" prefHeight="21.0" prefWidth="123.0" text=" Dependants:" />
+                  <Label layoutX="345.0" layoutY="442.0" prefHeight="21.0" prefWidth="77.0" text="Language:" />
+                  <Label layoutX="668.0" layoutY="442.0" prefHeight="21.0" prefWidth="112.0" text="Position Or Title:" />
+                  <JFXTextField layoutX="788.0" layoutY="427.0" prefHeight="31.0" prefWidth="238.0" />
+                  <JFXComboBox layoutX="428.0" layoutY="427.0" prefHeight="31.0" prefWidth="164.0" />
+                  <Label layoutX="7.0" layoutY="491.0" prefHeight="21.0" prefWidth="107.0" text="First Add. Type :" />
+                  <JFXTextField layoutX="114.0" layoutY="478.0" prefHeight="31.0" prefWidth="186.0" />
+                  <Label layoutX="350.0" layoutY="491.0" prefHeight="21.0" prefWidth="67.0" text="First City:" />
+                  <JFXTextField layoutX="426.0" layoutY="478.0" prefHeight="31.0" prefWidth="176.0" />
+                  <Label layoutX="684.0" layoutY="491.0" prefHeight="21.0" prefWidth="95.0" text="First Add. Fax:" />
+                  <JFXTextField layoutX="791.0" layoutY="478.0" prefHeight="31.0" prefWidth="234.0" />
+                  <Label layoutX="7.0" layoutY="543.0" prefHeight="21.0" prefWidth="107.0" text="First Add. Line1:" />
+                  <JFXTextField layoutX="124.0" layoutY="530.0" prefHeight="31.0" prefWidth="175.0" />
+                  <Label layoutX="310.0" layoutY="543.0" prefHeight="21.0" prefWidth="108.0" text="First Add. Line2:" />
+                  <JFXTextField layoutX="430.0" layoutY="530.0" prefHeight="31.0" prefWidth="182.0" />
+                  <Label layoutX="671.0" layoutY="543.0" prefHeight="21.0" prefWidth="107.0" text="First Add. Line3:" />
+                  <JFXTextField layoutX="790.0" layoutY="530.0" prefHeight="31.0" prefWidth="235.0" />
+                  <Label layoutX="2.0" layoutY="588.0" prefHeight="21.0" prefWidth="117.0" text="First Add. Phne1:" />
+                  <JFXTextField layoutX="125.0" layoutY="575.0" prefHeight="31.0" prefWidth="177.0" />
+                  <Label layoutX="306.0" layoutY="588.0" prefHeight="21.0" prefWidth="116.0" text="First Add. Phne1:" />
+                  <JFXTextField layoutX="432.0" layoutY="575.0" prefHeight="31.0" prefWidth="181.0" />
+                  <Label layoutX="681.0" layoutY="596.0" prefHeight="21.0" prefWidth="100.0" text="MXP Account:" />
+                  <JFXTextField layoutX="786.0" layoutY="581.0" prefHeight="31.0" prefWidth="240.0" />
+                  <Label layoutX="13.0" layoutY="644.0" prefHeight="21.0" prefWidth="107.0" text="Sec. Add. Type :" />
+                  <JFXTextField layoutX="120.0" layoutY="631.0" prefHeight="31.0" prefWidth="186.0" />
+                  <Label layoutX="356.0" layoutY="644.0" prefHeight="21.0" prefWidth="67.0" text="Sec. City:" />
+                  <JFXTextField layoutX="432.0" layoutY="631.0" prefHeight="31.0" prefWidth="176.0" />
+                  <Label layoutX="690.0" layoutY="644.0" prefHeight="21.0" prefWidth="95.0" text="Sec. Add. Fax:" />
+                  <JFXTextField layoutX="797.0" layoutY="631.0" prefHeight="31.0" prefWidth="234.0" />
+                  <Label layoutX="13.0" layoutY="696.0" prefHeight="21.0" prefWidth="107.0" text="Sec. Add. Line1:" />
+                  <JFXTextField layoutX="130.0" layoutY="683.0" prefHeight="31.0" prefWidth="175.0" />
+                  <Label layoutX="316.0" layoutY="696.0" prefHeight="21.0" prefWidth="108.0" text="Sec. Add. Line2:" />
+                  <JFXTextField layoutX="436.0" layoutY="683.0" prefHeight="31.0" prefWidth="182.0" />
+                  <Label layoutX="677.0" layoutY="696.0" prefHeight="21.0" prefWidth="107.0" text="Sec. Add. Line3:" />
+                  <JFXTextField layoutX="796.0" layoutY="683.0" prefHeight="31.0" prefWidth="235.0" />
+                  <Label layoutX="8.0" layoutY="741.0" prefHeight="21.0" prefWidth="117.0" text="Sec. Add. Phne1:" />
+                  <JFXTextField layoutX="131.0" layoutY="728.0" prefHeight="31.0" prefWidth="177.0" />
+                  <Label layoutX="312.0" layoutY="741.0" prefHeight="21.0" prefWidth="116.0" text="Sec. Add. Phne1:" />
+                  <JFXTextField layoutX="438.0" layoutY="728.0" prefHeight="31.0" prefWidth="181.0" />
+                  <Label layoutX="687.0" layoutY="749.0" prefHeight="21.0" prefWidth="100.0" text="Bank Account:" />
+                  <JFXTextField layoutX="792.0" layoutY="734.0" prefHeight="31.0" prefWidth="240.0" />
+                  <Label layoutX="4.0" layoutY="792.0" prefHeight="21.0" prefWidth="114.0" text="Third Add. Type :" />
+                  <JFXTextField layoutX="116.0" layoutY="779.0" prefHeight="31.0" prefWidth="186.0" />
+                  <Label layoutX="352.0" layoutY="792.0" prefHeight="21.0" prefWidth="67.0" text="Third City:" />
+                  <JFXTextField layoutX="428.0" layoutY="779.0" prefHeight="31.0" prefWidth="176.0" />
+                  <Label layoutX="681.0" layoutY="792.0" prefHeight="21.0" prefWidth="105.0" text="Third Add. Fax:" />
+                  <JFXTextField layoutX="793.0" layoutY="779.0" prefHeight="31.0" prefWidth="234.0" />
+                  <Label layoutX="4.0" layoutY="844.0" prefHeight="21.0" prefWidth="113.0" text="Third Add. Line1:" />
+                  <JFXTextField layoutX="126.0" layoutY="831.0" prefHeight="31.0" prefWidth="175.0" />
+                  <Label layoutX="312.0" layoutY="844.0" prefHeight="21.0" prefWidth="115.0" text="Third Add. Line2:" />
+                  <JFXTextField layoutX="432.0" layoutY="831.0" prefHeight="31.0" prefWidth="182.0" />
+                  <Label layoutX="673.0" layoutY="844.0" prefHeight="21.0" prefWidth="114.0" text="Third Add. Line3:" />
+                  <JFXTextField layoutX="792.0" layoutY="831.0" prefHeight="31.0" prefWidth="235.0" />
+                  <Label layoutX="3.0" layoutY="887.0" prefHeight="21.0" prefWidth="126.0" text="Third Add. Phne1:" />
+                  <JFXTextField layoutX="127.0" layoutY="876.0" prefHeight="31.0" prefWidth="177.0" />
+                  <Label layoutX="308.0" layoutY="889.0" prefHeight="21.0" prefWidth="122.0" text="Third Add. Phne1:" />
+                  <JFXTextField layoutX="434.0" layoutY="876.0" prefHeight="31.0" prefWidth="181.0" />
+                  <Label layoutX="684.0" layoutY="889.0" prefHeight="21.0" prefWidth="108.0" text="Customer Type:" />
+                  <CheckBox layoutX="823.0" layoutY="889.0" mnemonicParsing="false" text="O" />
+                  <CheckBox layoutX="892.0" layoutY="889.0" mnemonicParsing="false" text="N" />
+                  <Label layoutX="-1.0" layoutY="941.0" prefHeight="21.0" prefWidth="125.0" text="Account Currency:" />
+                  <JFXTextField layoutX="119.0" layoutY="928.0" prefHeight="31.0" prefWidth="179.0" />
+                  <Label layoutX="344.0" layoutY="941.0" prefHeight="21.0" prefWidth="83.0" text="Credit Limit:" />
+                  <JFXTextField layoutX="424.0" layoutY="928.0" prefHeight="31.0" prefWidth="176.0" />
+                  <Label layoutX="656.0" layoutY="941.0" prefHeight="21.0" prefWidth="121.0" text="Debit Program ID:" />
+                  <JFXTextField layoutX="789.0" layoutY="928.0" prefHeight="31.0" prefWidth="234.0" />
+                  <Label layoutX="5.0" layoutY="993.0" prefHeight="21.0" prefWidth="115.0" text="Guarantee Type:" />
+                  <JFXTextField layoutX="117.0" layoutY="980.0" prefHeight="31.0" prefWidth="180.0" />
+                  <Label layoutX="323.0" layoutY="993.0" prefHeight="21.0" prefWidth="108.0" text="Guarantee Info:" />
+                  <JFXTextField layoutX="428.0" layoutY="980.0" prefHeight="31.0" prefWidth="182.0" />
+                  <Label layoutX="663.0" layoutY="993.0" prefHeight="21.0" prefWidth="113.0" text="Guarantee Value:" />
+                  <JFXTextField layoutX="788.0" layoutY="980.0" prefHeight="31.0" prefWidth="235.0" />
+                  <Label layoutX="7.0" layoutY="1045.0" prefHeight="21.0" prefWidth="123.0" text="Card Holder Title:" />
+                  <JFXComboBox layoutX="133.0" layoutY="1030.0" prefHeight="31.0" prefWidth="166.0" />
+                  <Label layoutX="327.0" layoutY="1045.0" prefHeight="21.0" prefWidth="168.0" text="Card Holder First Name:" />
+                  <JFXTextField layoutX="501.0" layoutY="1030.0" prefHeight="31.0" prefWidth="166.0" />
+                  <Label layoutX="674.0" layoutY="1045.0" prefHeight="21.0" prefWidth="182.0" text="Card Holder Middle Name:" />
+                  <JFXTextField layoutX="856.0" layoutY="1031.0" prefHeight="31.0" prefWidth="182.0" />
+                  <Label layoutX="326.0" layoutY="1100.0" prefHeight="21.0" prefWidth="115.0" text="Name on Card:" />
+                  <JFXTextField layoutX="170.0" layoutY="1079.0" prefHeight="31.0" prefWidth="132.0" />
+                  <Label layoutX="4.0" layoutY="1100.0" prefHeight="21.0" prefWidth="162.0" text="Card Holder Last Name:" />
+                  <JFXTextField layoutX="433.0" layoutY="1079.0" prefHeight="31.0" prefWidth="182.0" />
+                  <Label layoutX="668.0" layoutY="1092.0" prefHeight="21.0" prefWidth="116.0" text="Corporate Name:" />
+                  <JFXTextField layoutX="793.0" layoutY="1079.0" prefHeight="31.0" prefWidth="235.0" />
+                  <Label layoutX="671.0" layoutY="1143.0" prefHeight="21.0" prefWidth="128.0" text="Credit Program ID:" />
+                  <JFXTextField layoutX="804.0" layoutY="1130.0" prefHeight="31.0" prefWidth="234.0" />
+                  <Label layoutX="329.0" layoutY="1154.0" prefHeight="21.0" prefWidth="115.0" text="Effective Date:" />
+                  <JFXTextField layoutX="173.0" layoutY="1133.0" prefHeight="31.0" prefWidth="132.0" />
+                  <Label layoutX="7.0" layoutY="1154.0" prefHeight="21.0" prefWidth="162.0" text="A/M Card Number:" />
+                  <JFXDatePicker layoutX="448.0" layoutY="1138.0" prefHeight="31.0" prefWidth="162.0" />
+                  <JFXButton layoutX="508.0" layoutY="1673.0" />
+                  <Label layoutX="705.0" layoutY="1191.0" prefHeight="21.0" prefWidth="94.0" text="Primary Card:" />
+                  <JFXTextField layoutX="815.0" layoutY="1175.0" prefHeight="31.0" prefWidth="234.0" />
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

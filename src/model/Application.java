@@ -59,6 +59,7 @@ public class Application {
     private String thirdAddressPhone2;
     private String thirdAddressFax;
     private String thirdCity;
+
     private char accountType;
     private String mxpAccount;
     private String bankAccount;
