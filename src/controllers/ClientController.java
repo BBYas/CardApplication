@@ -12,6 +12,7 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.RadioButton;
 import javafx.scene.control.ToggleGroup;
 
 import org.apache.commons.lang.RandomStringUtils;
@@ -74,6 +75,9 @@ public class ClientController implements Initializable {
     private JFXTextField tfPrimaryCard;
 
     @FXML
+    private RadioButton radPrimary;
+
+    @FXML
     private ToggleGroup PrimaryOrSecondary;
 
     @FXML
@@ -88,6 +92,7 @@ public class ClientController implements Initializable {
     @FXML
     void onSubmit(ActionEvent event) {
         //validate if all compulsory fields not null
+
 
     }
 

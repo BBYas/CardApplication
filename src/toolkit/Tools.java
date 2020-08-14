@@ -50,8 +50,10 @@ public class Tools {
     }
 
     public static Boolean validDate(LocalDate date) {
+
         return (date.isAfter(LocalDate.now()));
     }
+
 
 
 
