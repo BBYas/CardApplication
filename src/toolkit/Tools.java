@@ -21,7 +21,7 @@ public class Tools {
 
     // no letter and max 20
     public static boolean validPhoneNumber(String phoneNumber) {
-        return (phoneNumber.length()>MAX_PHONE_NUMBER_LENGTH);
+        return (phoneNumber.length()>MAX_PHONE_NUMBER_LENGTH&&phoneNumber.matches("[0-9]+"));
 
     }
 
@@ -49,9 +49,10 @@ public class Tools {
 
     }
 
-    public static void validDate() {
-
+    public static Boolean validDate(LocalDate date) {
+        return (date.isAfter(LocalDate.now()));
     }
+
 
 
 }

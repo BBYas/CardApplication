@@ -95,15 +95,15 @@ public class ClientController implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
 
      tfApplicationId.setText(RandomStringUtils.random(20, true, true));
-        //cmbTitle.getItems().addAll("hjg","gfhjk");
-        //cmbFirstAddressType.setItems(addressType);
-       // cmbMaritalStatus.setItems(maritalStatus);
-        //cmbCardHolderTitle.setItems(title);
+        cmbTitle.setItems(title);
+        cmbFirstAddressType.setItems(addressType);
+        cmbMaritalStatus.setItems(maritalStatus);
+        cmbCardHolderTitle.setItems(title);
 
-       // cmbMaritalStatus.getSelectionModel().selectFirst();
-       // cmbFirstAddressType.getSelectionModel().selectFirst();
-      //  cmbCardHolderTitle.getSelectionModel().selectFirst();
-      //  cmbTitle.getSelectionModel().selectFirst();
+        cmbMaritalStatus.getSelectionModel().selectFirst();
+        cmbFirstAddressType.getSelectionModel().selectFirst();
+        cmbCardHolderTitle.getSelectionModel().selectFirst();
+        cmbTitle.getSelectionModel().selectFirst();
 
     }
 }
