@@ -17,7 +17,7 @@ public class TestMain extends Application {
             Scene scene1 = new Scene(root);
             primaryStage.getIcons().add(new Image(TestMain.class.getResourceAsStream("/resources/images/logo.png")));
             primaryStage.setScene(scene1);
-//            primaryStage.setResizable(false);
+            primaryStage.setResizable(false);
             primaryStage.show();
             primaryStage.setTitle("Pre Paid Card");
         } catch (IOException e) {

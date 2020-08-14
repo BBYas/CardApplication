@@ -181,6 +181,9 @@
             </stops>
          </LinearGradient>
       </defaultColor>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
    </JFXDatePicker>
    <Label layoutX="177.0" layoutY="295.0" text="Birth Date:" />
    <Label layoutX="253.0" layoutY="296.0" text="*" textFill="RED">
@@ -400,5 +403,4 @@
          </LinearGradient>
       </textFill>
    </RadioButton>
-   <Label fx:id="lblAlert" layoutX="116.0" layoutY="757.0" prefHeight="21.0" prefWidth="652.0" />
 </AnchorPane>

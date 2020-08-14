@@ -1,9 +1,13 @@
+package generation;
+
 import DTO.FieldDTO;
 import converters.Converters;
 import services.Justify;
 
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import static converters.Converters.*;
 
@@ -189,13 +193,12 @@ public class Generation {
         fieldDTOS.add(convertClientType("I"));
 
         int size = 0;
-        try (PrintWriter printWriter = new PrintWriter("generated_file.txt")) {
+        try (PrintWriter printWriter = new PrintWriter("application_file.txt")) {
             for (FieldDTO fieldDTO : fieldDTOS) {
                 final String field = Justify.justifyField(fieldDTO);
                 printWriter.print(field);
                 size += field.length();
             }
-            System.out.println(size);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
