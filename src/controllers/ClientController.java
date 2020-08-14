@@ -5,6 +5,7 @@ import com.jfoenix.controls.JFXComboBox;
 import com.jfoenix.controls.JFXDatePicker;
 import com.jfoenix.controls.JFXTextField;
 import enumerations.AddressType;
+import enumerations.MaritalStatus;
 import enumerations.Title;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -37,7 +38,7 @@ public class ClientController implements Initializable {
     private JFXTextField tfLastName;
 
     @FXML
-    private JFXComboBox<String> cmbMaritalStatus;
+    private JFXComboBox<MaritalStatus> cmbMaritalStatus;
 
     @FXML
     private JFXDatePicker dpBirthDate;
@@ -79,7 +80,7 @@ public class ClientController implements Initializable {
     private JFXComboBox<Title> cmbCardHolderTitle;
 
     ObservableList<Title> title = FXCollections.observableArrayList(Title.values());
-    ObservableList<String> maritalStatus = FXCollections.observableArrayList("Single","Married","Divorced","Widower","Seperated");
+    ObservableList<MaritalStatus> maritalStatus = FXCollections.observableArrayList(MaritalStatus.values());
     ObservableList<AddressType> addressType = FXCollections.observableArrayList(AddressType.values());
 
 
