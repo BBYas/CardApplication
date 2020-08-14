@@ -12,9 +12,11 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.ToggleGroup;
 
+import javafx.scene.paint.Color;
 import org.apache.commons.lang.RandomStringUtils;
 import toolkit.Tools;
 
@@ -27,7 +29,7 @@ public class ClientController implements Initializable {
     private JFXTextField tfApplicationId;
 
     @FXML
-     private JFXComboBox<Title> cmbTitle;
+    private JFXComboBox<Title> cmbTitle;
 
     @FXML
     private JFXTextField tfFirstName;
@@ -81,6 +83,9 @@ public class ClientController implements Initializable {
     private ToggleGroup PrimaryOrSecondary;
 
     @FXML
+    private Label lblAlert;
+
+    @FXML
     private JFXComboBox<Title> cmbCardHolderTitle;
 
     ObservableList<Title> title = FXCollections.observableArrayList(Title.values());
@@ -88,11 +93,25 @@ public class ClientController implements Initializable {
     ObservableList<AddressType> addressType = FXCollections.observableArrayList(AddressType.values());
 
 
-
     @FXML
     void onSubmit(ActionEvent event) {
-        //validate if all compulsory fields not null
+        boolean validation = Tools.checkNameLength(tfFirstName.getText()) && Tools.checkNameLength(tfLastName.getText()) && Tools.validDate(dpBirthDate.getValue())
+                && Tools.validAddressLength(tfFirstAddressLine1.getText()) && Tools.validBirthLocationLength(tfBirthLocation.getText())
+                && Tools.validCityLength(tfFirstAddressCity.getText()) && Tools.validPhoneNumber(tfFirstAddressPhone1.getText())
+                && Tools.checkNameLength(tfCardHolderFirstName.getText()) && Tools.checkNameLength(tfCardHolderLastName.getText())
+                && Tools.validNameOnCardLength(tfNameOnCard.getText()) && Tools.checkNameLength(tfMiddleName.getText())
+                && Tools.checkNameLength(tfCardHolderMiddleName.getText()) && Tools.validCityLength(tfPrimaryCard.getText()) &&
+                tfFirstName.getText().isEmpty() && tfLastName.getText().isEmpty() && tfFirstAddressLine1.getText().isEmpty() &&
+                tfFirstAddressPhone1.getText().isEmpty() && tfCardHolderLastName.getText().isEmpty() && tfFirstAddressCity.getText().isEmpty()
+                && tfCardHolderFirstName.getText().isEmpty() && tfNameOnCard.getText().isEmpty();
+        if (validation) {
 
+
+        } else {
+            lblAlert.setText("Please Enter all the required fields ");
+            lblAlert.setTextFill(Color.RED);
+
+        }
 
     }
 
@@ -100,7 +119,7 @@ public class ClientController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
-     tfApplicationId.setText(RandomStringUtils.random(20, true, true));
+        tfApplicationId.setText(RandomStringUtils.random(20, true, true));
         cmbTitle.setItems(title);
         cmbFirstAddressType.setItems(addressType);
         cmbMaritalStatus.setItems(maritalStatus);
@@ -110,6 +129,10 @@ public class ClientController implements Initializable {
         cmbFirstAddressType.getSelectionModel().selectFirst();
         cmbCardHolderTitle.getSelectionModel().selectFirst();
         cmbTitle.getSelectionModel().selectFirst();
+
+        radPrimary.selectedProperty().addListener(observable -> {
+            tfPrimaryCard.setDisable(!radPrimary.isSelected());
+        });
 
     }
 }
