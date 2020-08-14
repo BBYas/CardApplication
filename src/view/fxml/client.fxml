@@ -81,6 +81,9 @@
       <font>
          <Font name="System Bold" size="15.0" />
       </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
    </JFXButton>
    <Label layoutX="174.0" layoutY="190.0" text="First Name:" />
    <JFXTextField fx:id="tfFirstName" layoutX="262.0" layoutY="186.0" prefHeight="31.0" prefWidth="205.0">

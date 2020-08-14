@@ -95,15 +95,15 @@ public class ClientController implements Initializable {
 
     @FXML
     void onSubmit(ActionEvent event) {
-        boolean validation = Tools.checkNameLength(tfFirstName.getText()) && Tools.checkNameLength(tfLastName.getText()) && Tools.validDate(dpBirthDate.getValue())
+        boolean validation = Tools.checkNameLength(tfFirstName.getText()) && Tools.checkNameLength(tfLastName.getText()) && dpBirthDate.getValue() != null && Tools.validDate(dpBirthDate.getValue())
                 && Tools.validAddressLength(tfFirstAddressLine1.getText()) && Tools.validBirthLocationLength(tfBirthLocation.getText())
                 && Tools.validCityLength(tfFirstAddressCity.getText()) && Tools.validPhoneNumber(tfFirstAddressPhone1.getText())
                 && Tools.checkNameLength(tfCardHolderFirstName.getText()) && Tools.checkNameLength(tfCardHolderLastName.getText())
                 && Tools.validNameOnCardLength(tfNameOnCard.getText()) && Tools.checkNameLength(tfMiddleName.getText())
                 && Tools.checkNameLength(tfCardHolderMiddleName.getText()) && Tools.validCityLength(tfPrimaryCard.getText()) &&
-                tfFirstName.getText().isEmpty() && tfLastName.getText().isEmpty() && tfFirstAddressLine1.getText().isEmpty() &&
-                tfFirstAddressPhone1.getText().isEmpty() && tfCardHolderLastName.getText().isEmpty() && tfFirstAddressCity.getText().isEmpty()
-                && tfCardHolderFirstName.getText().isEmpty() && tfNameOnCard.getText().isEmpty();
+                !tfFirstName.getText().isEmpty() && !tfLastName.getText().isEmpty() && !tfFirstAddressLine1.getText().isEmpty() &&
+                !tfFirstAddressPhone1.getText().isEmpty() && !tfCardHolderLastName.getText().isEmpty() && !tfFirstAddressCity.getText().isEmpty()
+                && !tfCardHolderFirstName.getText().isEmpty() && !tfNameOnCard.getText().isEmpty();
         if (validation) {
 
 

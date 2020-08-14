@@ -16,41 +16,38 @@ public class Tools {
 
     //max 40
     public static boolean checkNameLength(String name) {
-        return !(name.length()>MAX_NAME_LENGTH);
+        return name.length()<=MAX_NAME_LENGTH;
     }
 
     // no letter and max 20
     public static boolean validPhoneNumber(String phoneNumber) {
-        return !((phoneNumber.length()>MAX_PHONE_NUMBER_LENGTH&&phoneNumber.matches("[0-9]+")));
-
+        return (phoneNumber.length()<=MAX_PHONE_NUMBER_LENGTH && phoneNumber.matches("[0-9]+"));
     }
 
     //max 40
     public static boolean validAddressLength(String address) {
-        return (!(address.length() > MAX_ADDRESS_LENGTH));
-
+        return address.length()<= MAX_ADDRESS_LENGTH;
     }
 
     //max 20
     public static boolean validCityLength(String city) {
-        return (!(city.length() > MAX_CITY_LENGTH));
+        return (city.length() <= MAX_CITY_LENGTH);
 
     }
 
     //max 40
     public static boolean validBirthLocationLength(String location) {
-        return (!(location.length() >MAX_BIRTH_LOCATION_LENGTH));
+        return (location.length() <=MAX_BIRTH_LOCATION_LENGTH);
     }
 
     //max 25
     public static boolean validNameOnCardLength(String name) {
-        return (!(name.length()>MAX_NAME_ON_CARD_LENGTH));
+        return (name.length()<=MAX_NAME_ON_CARD_LENGTH);
 
     }
 
     public static Boolean validDate(LocalDate date) {
-
-        return (!date.isAfter(LocalDate.now()));
+        return date.isBefore(LocalDate.now());
     }
 
 

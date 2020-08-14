@@ -30,14 +30,6 @@ public class Generation {
     private static String primarySecondary;
     private static String primaryCard;
 
-
-    public static void main(String[] args) {
-
-
-
-
-    }
-
     public static void setApplicationIden(String applicationIden) {
         Generation.applicationIden = applicationIden;
     }
