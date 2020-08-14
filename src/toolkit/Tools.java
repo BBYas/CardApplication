@@ -1,10 +1,6 @@
 package toolkit;
 
-import com.jfoenix.controls.JFXDatePicker;
-import javafx.util.StringConverter;
-
 import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 
 public class Tools {
     final static int MAX_NAME_LENGTH = 40;
