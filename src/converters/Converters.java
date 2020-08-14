@@ -287,7 +287,7 @@ public class Converters {
         FieldDTO fieldDTO = new FieldDTO();
         fieldDTO.setValue(value);
         fieldDTO.setDataType(DataTypes.STRING);
-        fieldDTO.setMaxSize(25);
+        fieldDTO.setMaxSize(10);
         return fieldDTO;
     }
 

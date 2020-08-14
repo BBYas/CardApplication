@@ -1,6 +1,5 @@
 package controllers;
 
-import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXComboBox;
 import com.jfoenix.controls.JFXDatePicker;
 import com.jfoenix.controls.JFXTextField;
@@ -11,11 +10,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ToggleGroup;
 
-import org.apache.commons.lang.RandomStringUtils;
-import toolkit.Tools;
-
 import java.net.URL;
-import java.time.format.DateTimeFormatter;
 import java.util.ResourceBundle;
 
 public class ClientController implements Initializable {
@@ -94,8 +89,8 @@ public class ClientController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
-     tfApplicationId.setText(RandomStringUtils.random(20, true, true));
-        //cmbTitle.getItems().addAll("hjg","gfhjk");
+//     tfApplicationId.setText(RandomStringUtils.random(20, true, true));
+        cmbTitle.getItems().addAll("hjg","gfhjk");
         //cmbFirstAddressType.setItems(addressType);
        // cmbMaritalStatus.setItems(maritalStatus);
         //cmbCardHolderTitle.setItems(title);
