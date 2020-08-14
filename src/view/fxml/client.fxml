@@ -397,5 +397,5 @@
          </LinearGradient>
       </textFill>
    </RadioButton>
-   <Label layoutX="116.0" layoutY="757.0" prefHeight="21.0" prefWidth="652.0" />
+   <Label fx:id="lblAlert" layoutX="116.0" layoutY="757.0" prefHeight="21.0" prefWidth="652.0" />
 </AnchorPane>
