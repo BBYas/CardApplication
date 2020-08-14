@@ -4,6 +4,8 @@ import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXComboBox;
 import com.jfoenix.controls.JFXDatePicker;
 import com.jfoenix.controls.JFXTextField;
+import enumerations.AddressType;
+import enumerations.Title;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -23,7 +25,7 @@ public class ClientController implements Initializable {
     private JFXTextField tfApplicationId;
 
     @FXML
-     private JFXComboBox<String> cmbTitle;
+     private JFXComboBox<Title> cmbTitle;
 
     @FXML
     private JFXTextField tfFirstName;
@@ -56,7 +58,7 @@ public class ClientController implements Initializable {
     private JFXTextField tfNameOnCard;
 
     @FXML
-    private JFXComboBox<String> cmbFirstAddressType;
+    private JFXComboBox<AddressType> cmbFirstAddressType;
 
     @FXML
     private JFXTextField tfFirstAddressLine1;
@@ -74,19 +76,17 @@ public class ClientController implements Initializable {
     private ToggleGroup PrimaryOrSecondary;
 
     @FXML
-    private JFXComboBox<String> cmbCardHolderTitle;
+    private JFXComboBox<Title> cmbCardHolderTitle;
 
-    ObservableList<String> title = FXCollections.observableArrayList("Mr","Miss","Mrs","Dr","Eng.","H.E","Messrs");
+    ObservableList<Title> title = FXCollections.observableArrayList(Title.values());
     ObservableList<String> maritalStatus = FXCollections.observableArrayList("Single","Married","Divorced","Widower","Seperated");
-    ObservableList<String> addressType = FXCollections.observableArrayList("Civil Id","Passport","Driver License", "Employee Id",
-            "Residence Card","Family Book","Social Sec. Num." );
+    ObservableList<AddressType> addressType = FXCollections.observableArrayList(AddressType.values());
 
 
 
     @FXML
     void onSubmit(ActionEvent event) {
         //validate if all compulsory fields not null
-
 
     }
 
