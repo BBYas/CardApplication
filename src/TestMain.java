@@ -19,7 +19,7 @@ public class TestMain extends Application {
             primaryStage.setScene(scene1);
             primaryStage.setResizable(false);
             primaryStage.show();
-            primaryStage.setTitle("pre paid");
+            primaryStage.setTitle("Pre Paid Card");
         } catch (IOException e) {
             e.printStackTrace();
         }
